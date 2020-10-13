@@ -11,11 +11,11 @@ Matriculation Number: A0190123U
 
 #### Install the following packages necessary for a simple REST API demonstration.
 
-- [NodeJS] (https://nodejs.org/en/download/)
-- [MongoDB] (https://www.mongodb.com/try/download/community)
-- [NPM] (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- [Postman] (https://www.postman.com/downloads/)
-- [Express] (https://expressjs.com/en/starter/installing.html)
+- [NodeJS](https://nodejs.org/en/download/)
+- [MongoDB](https://www.mongodb.com/try/download/community)
+- [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- [Postman](https://www.postman.com/downloads/)
+- [Express](https://expressjs.com/en/starter/installing.html)
 
 ## Verification Guide
 
