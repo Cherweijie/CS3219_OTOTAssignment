@@ -17,15 +17,17 @@ Matriculation Number: A0190123U
 - [Postman] (https://www.postman.com/downloads/)
 - [Express] (https://expressjs.com/en/starter/installing.html)
 
+## Verification Guide
+
+Follow these steps before proceeding on to the tutorial.
+
 - Verify that NodeJs is installed on your computer using `node -v`.
 - Verify that NPM is installed using `npm -v`.
 - Verify that Express is installed using `express --version`.
 - Verify that MongoDB is installed using `mongo --version`.
 - Verify that Postman is downloaded from [here] (https://www.postman.com/downloads/).
 
-## Verification Guide
-
-Follow these steps:
+Next, once everything has been set up, follow these steps to ensure that the program runs as expected before using Postman to perform `GET`, `POST`, `UPDATE` and `DELETE`.
 
 1. Clone and download this repository's code.
 2. Change directory to the root directory of the downloaded project using `cd YOUR_PROJECT_DIRECTORY_HERE`.
