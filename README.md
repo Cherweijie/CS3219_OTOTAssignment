@@ -64,7 +64,7 @@ Next, once everything has been set up, follow these steps to ensure that the pro
 3. [Chai](https://dev.to/bushraalam/introduction-to-testing-with-mocha-and-chai-57po)
 4. [Travis](https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci-using-github)
 
-Ensure that these packages are installed before _forking this repository_ to your local repository.
+Ensure that these packages are installed before **forking this repository** to your local repository.
 
 ## To Run Tests:
 
@@ -72,7 +72,7 @@ Ensure that these packages are installed before _forking this repository_ to you
 
 1. Ensure that you have followed and done all instructions presented in task B1.
 2. Ensure that the the localhost link http://localhost:8080/api/contacts/ is empty; i.e. no contacts available in the mongoDB database.
-3. In this project's root directory, run `npm run test` to check that _all 5 tests pass_.
+3. In this project's root directory, run `npm run test` to check that **all 5 tests pass**.
 
 ### Running Tests on Travis:
 
