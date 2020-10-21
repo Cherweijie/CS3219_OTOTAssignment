@@ -4,7 +4,7 @@
   "description": "An app demonstrating simple RESTful API implementation using a list of contacts",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --exit"
   },
   "keywords": [
     "API",

@@ -23,7 +23,7 @@ describe("Testing CRUD API for a list of contacts, aka POST, GET, PATCH, DELETE"
 
   describe("STEP 1: Test POST request", () => {
     it("should create a contact in the contact list", (done) => {
-      chai.request(app).post('/api/contacts').send(sampleContact).end((err,res) => {
+      chai.request(app).post('/api/contacts/').send(sampleContact).end((err,res) => {
         if (err) {
           throw err;
         }
@@ -43,7 +43,7 @@ describe("Testing CRUD API for a list of contacts, aka POST, GET, PATCH, DELETE"
 
   describe("STEP 2: Test GET request for empty contact list and GET request for a specified contact from a list of contacts", () => {
     it("should retrieve zero contacts from an empty contact list", (done) => {
-      chai.request(app).get('/api/contacts').end((err, res) => {
+      chai.request(app).get('/api/contacts/').end((err, res) => {
         if (err) {
           throw err;
         }
