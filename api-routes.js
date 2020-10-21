@@ -3,8 +3,8 @@ let router = require("express").Router();
 // Set default API response
 router.get("/", function (req, res) {
   res.json({
-    status: "API Its Working",
-    message: "Welcome to RESTHub crafted with love!",
+    status: "Hooray! The API is working!",
+    message: "Welcome to RESTContacts, where you can implement simple API calls for a list of contacts!",
   });
 });
 // Import contact controller
