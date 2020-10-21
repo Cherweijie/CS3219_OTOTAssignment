@@ -1,9 +1,9 @@
-# CS3219_OTOTAssignment
+# CS3219_OTOTAssignment Task B
 
 This repository was created to provide documentation for CS3219 OTOT assignments AY20/21 Semester 1
 
-Student Name: Cher Wei Jie
-Matriculation Number: A0190123U
+- Student Name: Cher Wei Jie
+- Matriculation Number: A0190123U
 
 ## Installation Guide
 
@@ -25,7 +25,7 @@ Follow these steps before proceeding on to the tutorial.
 - Verify that NPM is installed using `npm -v`.
 - Verify that Express is installed using `express --version`.
 - Verify that MongoDB is installed using `mongo --version`.
-- Verify that Postman is downloaded from [here] (https://www.postman.com/downloads/).
+- Verify that Postman is downloaded from [here](https://www.postman.com/downloads/).
 
 Next, once everything has been set up, follow these steps to ensure that the program runs as expected before using Postman to perform `GET`, `POST`, `UPDATE` and `DELETE`.
 
@@ -38,7 +38,7 @@ Next, once everything has been set up, follow these steps to ensure that the pro
 7. The page should display `{"status":"success","message":"Contacts retrieved successfully","data":[]}`.
 8. You are now ready to use Postman to perform `GET`, `POST`, `PUT` and `DELETE`.
 
-## Running a simple Javascript backend REST API to GET and POST
+## Task B1: Running a simple Javascript backend REST API to GET and POST
 
 1. Launch Postman
 2. Upon successful launch, enter http://localhost:8080/api/contacts as the request URL.
@@ -55,8 +55,49 @@ Next, once everything has been set up, follow these steps to ensure that the pro
 4. To perform `UPDATE`, select either `PATCH` or `PUT` from the dropdown box and type the corresponding key-value pair(s) to be modified/updated; press send.
 5. To perform `DELETE`, select `DELETE` from the dropdown box and press send.
 
+## Task B2: To run tests locally and via Travis
+
+## Installation Guide:
+
+1. [NodeJS](https://nodejs.org/en/download/)
+2. [Mocha](https://mochajs.org/#getting-started)
+3. [Chai](https://dev.to/bushraalam/introduction-to-testing-with-mocha-and-chai-57po)
+4. [Travis](https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci-using-github)
+
+Ensure that these packages are installed before _forking this repository_ to your local repository.
+
+## To Run Tests:
+
+### Running Tests Locally:
+
+1. Ensure that you have followed and done all instructions presented in task B1.
+2. Ensure that the the localhost link http://localhost:8080/api/contacts/ is empty; i.e. no contacts available in the mongoDB database.
+3. In this project's root directory, run `npm run test` to check that _all 5 tests pass_.
+
+### Running Tests on Travis:
+
+1. Ensure that you have followed this [link](https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci-using-github) provided above in the installation guide from Travis using your Github account.
+2. Once you have followed the steps to link your github account, you may make some local changes to this existing repository and push to your remote repository.
+3. If you have allowed Travis to run on this remote repository, a Travis build should be triggered.
+4. You may use this [link](https://travis-ci.com/) to track all Travis builds across your approved repositories on GitHub.
+
 ## Acknowledgements
 
-### For Task B1
+### For Task B1:
 
-- Used the steps from this awesome [article](https://medium.com/@dinyangetoh/how-to-build-simple-restful-api-with-nodejs-expressjs-and-mongodb-99348012925d) posted on Medium.
+- Referenced this awesome [article](https://medium.com/@dinyangetoh/how-to-build-simple-restful-api-with-nodejs-expressjs-and-mongodb-99348012925d) posted on Medium.
+- Referenced this [link](https://expressjs.com/en/starter/hello-world.html) which can be found in CS3219 OTOTAssignment Task B1 resource links.
+
+### For Task B2:
+
+- Referenced the following links from CS3219 OTOTAssignment Task B2 resource links:
+
+* https://mochajs.org/#getting-started
+* https://medium.com/@asciidev/testing-a-node-express-application-with-mocha-chai-9592d41c0083
+* https://dev.to/bushraalam/introduction-to-testing-with-mocha-and-chai-57po
+
+- Additional links for Travis set-up:
+
+* https://docs.travis-ci.com/user/languages/javascript-with-nodejs/
+* https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci-using-github
+* https://medium.com/@nodejs/choosing-the-node-js-versions-for-your-ci-tests-hint-use-lts-89b67f68d7ca
