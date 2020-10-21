@@ -38,7 +38,7 @@ describe("Testing CRUD API for a list of contacts, aka POST, GET, PATCH, DELETE"
         testContactsList = res.body.data;
         done();
       });
-    })
+    }).timeout(7777);
   })
 
   describe("STEP 2: Test GET request for empty contact list and GET request for a specified contact from a list of contacts", () => {
@@ -98,7 +98,7 @@ describe("Testing CRUD API for a list of contacts, aka POST, GET, PATCH, DELETE"
         res.body.data.should.have.property('phone').eql("92345678");
         done();
       })
-    })
+    }).timeout(7777);
   })
 
   describe("STEP 4: Test DELETE request", () => {
