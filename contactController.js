@@ -28,7 +28,7 @@ exports.new = function (req, res) {
     // if (err)
     //     res.json(err);
     res.json({
-      message: "New contact created!",
+      message: "New contact has been added! :)",
       data: contact,
     });
   });
