@@ -83,21 +83,21 @@ Ensure that these packages are installed before _forking this repository_ to you
 
 ## Acknowledgements
 
-### For Task B1:
+## For Task B1:
 
-- Referenced this awesome [article](https://medium.com/@dinyangetoh/how-to-build-simple-restful-api-with-nodejs-expressjs-and-mongodb-99348012925d) posted on Medium.
-- Referenced this [link](https://expressjs.com/en/starter/hello-world.html) which can be found in CS3219 OTOTAssignment Task B1 resource links.
+1. Referenced this awesome [article](https://medium.com/@dinyangetoh/how-to-build-simple-restful-api-with-nodejs-expressjs-and-mongodb-99348012925d) posted on Medium.
+2. Referenced this [link](https://expressjs.com/en/starter/hello-world.html) which can be found in CS3219 OTOTAssignment Task B1 resource links.
 
-### For Task B2:
+## For Task B2:
 
-- Referenced the following links from CS3219 OTOTAssignment Task B2 resource links:
+1. Referenced the following links from CS3219 OTOTAssignment Task B2 resource links:
 
-* https://mochajs.org/#getting-started
-* https://medium.com/@asciidev/testing-a-node-express-application-with-mocha-chai-9592d41c0083
-* https://dev.to/bushraalam/introduction-to-testing-with-mocha-and-chai-57po
+- https://mochajs.org/#getting-started
+- https://medium.com/@asciidev/testing-a-node-express-application-with-mocha-chai-9592d41c0083
+- https://dev.to/bushraalam/introduction-to-testing-with-mocha-and-chai-57po
 
-- Additional links for Travis set-up:
+2. Additional links for Travis set-up:
 
-* https://docs.travis-ci.com/user/languages/javascript-with-nodejs/
-* https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci-using-github
-* https://medium.com/@nodejs/choosing-the-node-js-versions-for-your-ci-tests-hint-use-lts-89b67f68d7ca
+- https://docs.travis-ci.com/user/languages/javascript-with-nodejs/
+- https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci-using-github
+- https://medium.com/@nodejs/choosing-the-node-js-versions-for-your-ci-tests-hint-use-lts-89b67f68d7ca
