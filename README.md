@@ -60,3 +60,7 @@ Next, once everything has been set up, follow these steps to ensure that the pro
 ### For Task B1
 
 - Used the steps from this awesome [article](https://medium.com/@dinyangetoh/how-to-build-simple-restful-api-with-nodejs-expressjs-and-mongodb-99348012925d) posted on Medium.
+
+### For Task B2
+
+- Used these amazing guides to set up mocha, Chai and Travis.
