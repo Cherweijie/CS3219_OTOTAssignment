@@ -96,7 +96,8 @@ After testing CRUD requests, please remember to clear all entries from the datab
 
 1. Run a build for this repository and visit https://www.travis-ci.com to look at the build.
 2. Click on 'More options' on the top right corner of the build and click on 'Settings'.
-3. Scroll down to 'Environment Variables' and add the following fields which are provided in the submission PDF:
+3. Scroll down to 'Environment Variables' and ensure that 'All Branches' is selected.
+4. In 'Environment Variables', add the following fields which are provided in the submission PDF:
 
 - `AWS_ACCESS_KEY_ID` - <RETRIEVED_FROM_SUBMISSION_PDF>
 - `AWS_SECRET_ACCESS_KEY` - <RETRIEVED_FROM_SUBMISSION_PDF>

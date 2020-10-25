@@ -163,7 +163,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/cs3219-otot-b3/dev/1603620384945-2020-10-25T10:06:24.945Z/cs3219-otot-b3.zip"
+                "S3Key": "serverless/cs3219-otot-b3/dev/1603622705091-2020-10-25T10:45:05.091Z/cs3219-otot-b3.zip"
               },
               "FunctionName": "cs3219-otot-b3-dev-app",
               "Handler": "index.handler",
@@ -187,14 +187,14 @@
               "AppLogGroup"
             ]
           },
-          "AppLambdaVersionCB5wO2jCl667Jb7OUZP72hW4GXqoelJhXofeOIOuWk": {
+          "AppLambdaVersiongkrLRmpxsuSP7OwX2b5EomDaisrp9UlpRZKU3RFNZk": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "ZEOZ+pV3rAnqXivnNMVxAP7ezNq4J9CmNnqIHRVxa6o="
+              "CodeSha256": "yyqC/Cm1JX+UurVyEurpELVsoNdrEcFYAIAICz7J8G4="
             }
           },
           "ApiGatewayRestApi": {
@@ -406,7 +406,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1603620381417": {
+          "ApiGatewayDeployment1603622699534": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -468,7 +468,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersionCB5wO2jCl667Jb7OUZP72hW4GXqoelJhXofeOIOuWk"
+              "Ref": "AppLambdaVersiongkrLRmpxsuSP7OwX2b5EomDaisrp9UlpRZKU3RFNZk"
             }
           },
           "ServiceEndpoint": {
@@ -632,7 +632,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersionCB5wO2jCl667Jb7OUZP72hW4GXqoelJhXofeOIOuWk"
+        "versionLogicalId": "AppLambdaVersiongkrLRmpxsuSP7OwX2b5EomDaisrp9UlpRZKU3RFNZk"
       }
     },
     "configValidationMode": "warn",
@@ -661,7 +661,7 @@
     "artifact": "/Users/weijie/projects/OTOTAssignment_B/CS3219_OTOTAssignment/.serverless/cs3219-otot-b3.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/cs3219-otot-b3/dev/1603620384945-2020-10-25T10:06:24.945Z",
+    "artifactDirectoryName": "serverless/cs3219-otot-b3/dev/1603622705091-2020-10-25T10:45:05.091Z",
     "artifact": "cs3219-otot-b3.zip"
   }
 }
