@@ -81,7 +81,25 @@ Ensure that these packages are installed before **forking this repository** to y
 3. If you have allowed Travis to run on this remote repository, a Travis build should be triggered.
 4. You may use this [link](https://travis-ci.com/) to track all Travis builds across your approved repositories on GitHub.
 
-## Task B3: To deploy
+## Task B3: To use Automated Deployment via CD tools:
+
+### The serverless service (AWS Lambda) can be accessed with the following links:
+
+1. https://7zqrfikkpj.execute-api.us-east-1.amazonaws.com/dev/ - Landing page for service to test if it was successfully deployed.
+2. https://7zqrfikkpj.execute-api.us-east-1.amazonaws.com/dev/api/contacts - For CRUD requests to be done in Postman; similar to task B1.
+
+To perform POST, GET, UPDATE and DELETE, simply follow the instructions in Task B1 and use this [link](https://7zqrfikkpj.execute-api.us-east-1.amazonaws.com/dev); instead of using http://localhost:8080/api/contacts/ from Task B1.
+
+After testing CRUD requests, please remember to clear all entries from the database so that the implemented tests in Task B2 can be passed without any issues.
+
+### For setting up Travis:
+
+1. Run a build for this repository and visit https://www.travis-ci.com to look at the build.
+2. Click on 'More options' on the top right corner of the build and click on 'Settings'.
+3. Scroll down to 'Environment Variables' and add the following fields which are provided in the submission PDF:
+
+- `AWS_ACCESS_KEY_ID` - <RETRIEVED_FROM_SUBMISSION_PDF>
+- `AWS_SECRET_ACCESS_KEY` - <RETRIEVED_FROM_SUBMISSION_PDF>
 
 ## Acknowledgements
 
@@ -103,3 +121,19 @@ Ensure that these packages are installed before **forking this repository** to y
 - https://docs.travis-ci.com/user/languages/javascript-with-nodejs/
 - https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci-using-github
 - https://medium.com/@nodejs/choosing-the-node-js-versions-for-your-ci-tests-hint-use-lts-89b67f68d7ca
+
+## For Task B3:
+
+1. Links for setting up a serverless service:
+
+- https://www.serverless.com/blog/serverless-express-rest-api
+- https://www.serverless.com/framework/docs/providers/aws/guide/credentials/
+
+2. Links for setting up MongoDB Atlas:
+
+- https://medium.com/@sergio13prez/connecting-to-mongodb-atlas-d1381f184369
+- https://dev.to/adnanrahic/a-crash-course-on-serverless-apis-with-express-and-mongodb-193k
+
+3. Links for setting up Travis:
+
+- https://blog.travis-ci.com/2019-05-30-setting-up-a-ci-cd-process-on-github
