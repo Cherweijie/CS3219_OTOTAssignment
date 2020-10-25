@@ -1,3 +1,5 @@
+
+const serverless = require('serverless-http');
 // Import express
 let express = require("express");
 // Import Body parser
@@ -6,6 +8,7 @@ let bodyParser = require("body-parser");
 let mongoose = require("mongoose");
 // Initialise the app
 let app = express();
+let contactController = require('./contactController');
 
 // Import routes
 let apiRoutes = require("./api-routes");
@@ -16,8 +19,17 @@ app.use(
   })
 );
 app.use(bodyParser.json());
+
+
+
 // Connect to Mongoose and set connection variable
-mongoose.connect("mongodb://localhost/contacts", { useNewUrlParser: true });
+
+if (process.env.DB != null) {
+  mongoose.connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: true,});
+} else {
+  mongoose.connect("mongodb://localhost/contacts", { useNewUrlParser: true });
+}
+
 var db = mongoose.connection;
 
 // Added check for DB connection
@@ -28,7 +40,7 @@ else console.log("Db connected successfully");
 var port = process.env.PORT || 8080;
 
 // Send message for default URL
-app.get("/", (req, res) => res.send("Hello World with Express"));
+app.get("/", (req, res) => res.send("Hello World with Express with nodemon"));
 
 // Use Api routes in the App
 app.use("/api", apiRoutes);
@@ -38,3 +50,4 @@ app.listen(port, function () {
 });
 
 module.exports = app;
+module.exports.handler = serverless(app);

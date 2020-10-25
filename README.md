@@ -81,6 +81,8 @@ Ensure that these packages are installed before **forking this repository** to y
 3. If you have allowed Travis to run on this remote repository, a Travis build should be triggered.
 4. You may use this [link](https://travis-ci.com/) to track all Travis builds across your approved repositories on GitHub.
 
+## Task B3: To deploy
+
 ## Acknowledgements
 
 ## For Task B1:
