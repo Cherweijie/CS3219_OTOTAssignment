@@ -25,8 +25,9 @@ exports.new = function (req, res) {
   contact.phone = req.body.phone;
   // save the contact and check for errors
   contact.save(function (err) {
-    // if (err)
-    //     res.json(err);
+    if (err) {
+      return res.send(err);
+    }
     res.json({
       message: "New contact has been added! :)",
       data: contact,
@@ -36,7 +37,12 @@ exports.new = function (req, res) {
 // Handle view contact info
 exports.view = function (req, res) {
   Contact.findById(req.params.contact_id, function (err, contact) {
-    if (err) res.send(err);
+    if (err) {
+      res.send({
+        status: "Error",
+        message: "No such record with contact id.",
+      });
+    }
     res.json({
       message: "Contact details loading..",
       data: contact,
@@ -46,19 +52,28 @@ exports.view = function (req, res) {
 // Handle update contact info
 exports.update = function (req, res) {
   Contact.findById(req.params.contact_id, function (err, contact) {
-    if (err) res.send(err);
-    contact.name = req.body.name ? req.body.name : contact.name;
-    contact.gender = req.body.gender;
-    contact.email = req.body.email;
-    contact.phone = req.body.phone;
-    // save the contact and check for errors
-    contact.save(function (err) {
-      if (err) res.json(err);
-      res.json({
-        message: "Contact Info updated",
-        data: contact,
+    if (err) {
+      return res.send(err);
+    }
+    if (contact != null) {
+      contact.name = req.body.name ? req.body.name : contact.name;
+      contact.gender = req.body.gender ? req.body.gender : "";
+      contact.email = req.body.email ? req.body.email : contact.email;
+      contact.phone = req.body.phone ? req.body.phone : "";
+      // save the contact and check for errors
+      contact.save(function (err) {
+        if (err) return res.json(err);
+        res.json({
+          message: "Contact Info updated",
+          data: contact,
+        });
       });
-    });
+    } else {
+      res.json({
+        status: "error",
+        message: "Contact does not exist",
+      })
+    }
   });
 };
 // Handle delete contact
@@ -68,7 +83,9 @@ exports.delete = function (req, res) {
       _id: req.params.contact_id,
     },
     function (err, contact) {
-      if (err) res.send(err);
+      if (err) {
+        return res.send(err);
+      }
       res.json({
         status: "success",
         message: "Contact deleted",

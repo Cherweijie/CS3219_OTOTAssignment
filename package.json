@@ -22,9 +22,12 @@
     "helmet": "^4.1.1",
     "mocha": "^8.2.0",
     "mongoose": "^5.10.10",
+    "node": "^15.2.0",
     "nodemon": "^2.0.6",
     "serverless-http": "^2.6.0",
-    "travis": "^0.1.1"
+    "travis": "^0.1.1",
+    "vue": "^2.6.12",
+    "vue-sweetalert2": "^4.1.1"
   },
   "directories": {
     "test": "test"

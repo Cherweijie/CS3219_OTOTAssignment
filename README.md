@@ -5,6 +5,15 @@ This repository was created to provide documentation for CS3219 OTOT assignments
 - Student Name: Cher Wei Jie
 - Matriculation Number: A0190123U
 
+This file contains instructions and links to Tasks B1-B3 of CS3219 OTOT Assignment.
+
+GitHub Link for Tasks B1 - B3: https://github.com/Cherweijie/CS3219_OTOTAssignment
+
+Use the following details for Task B3:
+
+- `AWS_ACCESS_KEY_ID` - AKIASUWYSJOAPBXNPCPE
+- `AWS_SECRET_ACCESS_KEY` - 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
+
 ## Installation Guide
 
 ### Setting up before writing a simple REST API:
@@ -102,6 +111,47 @@ After testing CRUD requests, please remember to clear all entries from the datab
 - `AWS_ACCESS_KEY_ID` - <RETRIEVED_FROM_SUBMISSION_PDF>
 - `AWS_SECRET_ACCESS_KEY` - <RETRIEVED_FROM_SUBMISSION_PDF>
 
+## Task B4: To build a frontend SPA using Vue or any other framework:
+
+### Installation Guide:
+
+1. Existing libraries/tools from Tasks B1 to B3
+2. Install Vue-Sweetalert2 using the command `npm install -S vue-sweetalert2`.
+
+### Set-up Guide:
+
+1. In order to run the backend server, change the file directory to the 'app' by typing `nodemon index` in your root terminal.
+2. Now, in order to run the frontend of the application, open a new terminal and change the file directory to the 'src' directory located inside the 'app' directory.
+3. You may do so by using `cd app` followed by `cd src`.
+4. In the 'src' folder, run `npm run serve` to start up the frontend website.
+5. Go to the website link given in the terminal after running `npm run serve` to use the API functions.
+
+These are the following APIs to be used on the website:
+
+1. Create a new contact:
+
+- Type the contact details (name, email, phone number and gender) of the contact to be added.
+- Click the 'Add Contact' button.
+- The contact will be added and reflected in the list of contacts generated below the buttons.
+
+2. Get the list of contacts:
+
+- Click the 'Get Contacts' button.
+- The contact list will be generated below the buttons.
+
+3. Update contact details:
+
+- Type the ID of the contact to be updated (This can be retrieved from the list of contacts by using the 'Get Contacts' button).
+- Type the contact details to update the selected contact.
+- Click the 'Update Contact' button.
+- The contact will be updated and the changes will be reflected in the newly generated list of contacts below the buttons.
+
+4. Delete a contact:
+
+- Type the ID of the contact to be deleted (This can be retrieved from the list of contacts by using the 'Get Contacts' button).
+- Click the 'Delete Contact' button.
+- The contact will be removed from the generated list of contacts below the buttons.
+
 ## Acknowledgements
 
 ## For Task B1:
@@ -138,3 +188,9 @@ After testing CRUD requests, please remember to clear all entries from the datab
 3. Links for setting up Travis:
 
 - https://blog.travis-ci.com/2019-05-30-setting-up-a-ci-cd-process-on-github
+
+## For Task B4:
+
+1. https://vuejs.org/v2/guide/
+2. https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html
+3. https://www.npmjs.com/package/vue-sweetalert2

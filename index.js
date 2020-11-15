@@ -20,8 +20,6 @@ app.use(
 );
 app.use(bodyParser.json());
 
-
-
 // Connect to Mongoose and set connection variable
 
 if (process.env.DB != null) {
