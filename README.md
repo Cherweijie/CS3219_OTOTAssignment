@@ -191,6 +191,11 @@ These are the following APIs to be used on the website:
 
 ## For Task B4:
 
-1. https://vuejs.org/v2/guide/
-2. https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html
-3. https://www.npmjs.com/package/vue-sweetalert2
+1. Referenced these links provided in OTOTAssignment document:
+
+- https://vuejs.org/v2/guide/
+- https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html
+
+2. Referenced the following link for alerts shown in the frontend:
+
+- https://www.npmjs.com/package/vue-sweetalert2
