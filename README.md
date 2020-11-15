@@ -115,7 +115,7 @@ After testing CRUD requests, please remember to clear all entries from the datab
 
 ### Installation Guide:
 
-1. Existing libraries/tools from Tasks B1 to B3
+1. Ensure that you have installed required libraries/tools from Tasks B1 to B3.
 2. Install Vue-Sweetalert2 using the command `npm install -S vue-sweetalert2`.
 
 ### Set-up Guide:
