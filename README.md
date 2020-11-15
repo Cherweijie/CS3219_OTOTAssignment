@@ -120,7 +120,7 @@ After testing CRUD requests, please remember to clear all entries from the datab
 
 ### Set-up Guide:
 
-1. In order to run the backend server, change the file directory to the 'app' by typing `nodemon index` in your root terminal.
+1. In order to run the backend server, type `nodemon index` in the root file directory of this project in your terminal.
 2. Now, in order to run the frontend of the application, open a new terminal and change the file directory to the 'src' directory located inside the 'app' directory.
 3. You may do so by using `cd app` followed by `cd src`.
 4. In the 'src' folder, run `npm run serve` to start up the frontend website.
