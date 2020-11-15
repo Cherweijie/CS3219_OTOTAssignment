@@ -5,14 +5,9 @@ This repository was created to provide documentation for CS3219 OTOT assignments
 - Student Name: Cher Wei Jie
 - Matriculation Number: A0190123U
 
-This file contains instructions and links to Tasks B1-B3 of CS3219 OTOT Assignment.
+This file contains instructions and links to Tasks B1-B4 of CS3219 OTOT Assignment.
 
-GitHub Link for Tasks B1 - B3: https://github.com/Cherweijie/CS3219_OTOTAssignment
-
-Use the following details for Task B3:
-
-- `AWS_ACCESS_KEY_ID` - AKIASUWYSJOAPBXNPCPE
-- `AWS_SECRET_ACCESS_KEY` - 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
+GitHub Link for Tasks B1 - B4: https://github.com/Cherweijie/CS3219_OTOTAssignment
 
 ## Installation Guide
 
